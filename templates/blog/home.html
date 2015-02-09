@@ -1,0 +1,173 @@
+{% extends 'blog/index.html' %}
+{% load staticfiles %}
+{% block 'content' %}
+<!-- ************* -->
+<!-- Header/Slider -->
+<!-- ************* -->
+
+<ul class="bxslider">
+    <li>
+        <div class="intro-header" id="slideDpvat">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>Receba o seguro DPVAT</h1>
+                            <h3>R$13.500 para vítimas de acidente de trânsito</h3>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons">
+                                <li>
+                                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;<b>QUERO SABER MAIS<b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.intro-header -->
+    </li>
+    <li>
+        <div class="intro-header" id="slideTrabalhista">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-message">
+                            <h1>Procurando advogado trabalhista?</h1>
+                            <h3>Cálculos trabalhista, rescição indireta, seguro desemprego...</h3>
+                            <hr class="intro-divider">
+                            <ul class="list-inline intro-social-buttons">
+                                <li>
+                                    <a href="#" class="btn btn-default btn-lg"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;<b>QUERO SABER MAIS<b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.intro-header -->
+    </li>
+</ul>
+
+<!-- ************ -->
+<!-- Page Content -->
+<!-- ************ -->
+
+<div class="content-section-a">
+
+    <div class="container">
+
+        <div class="row">
+
+             <div class="col-md-6">
+                <h2 class="section-heading">Onde estamos</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="{% static 'img/maps-icon.png' %}" />
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            Rua Carandaí, 245<br />
+                            Casa Verde - São Paulo/SP<br />
+                            CEP 02516-020<br />
+                            <a href="#">Ver no mapa</a>
+                        </p>
+                        
+                        <p style="font-size: 18px"><b>Horário de Funcionamento</b></p>
+                        <p>
+                            Segunda a sexta<br />
+                            09:00 até 17:00<br />
+                            Telefone: (11) 3564-7236
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <h2 class="section-heading">Fale Conosco</h2>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <div class="col-md-3 control-label">
+                            <label for="name">Nome</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form-control" type="text" name="name">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <div class="col-md-3 control-label">
+                            <label for="name">Telefone</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form-control" type="text" name="phone">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-3 control-label">
+                            <label for="name">Mensagem</label>
+                        </div>
+                        <div class="col-md-9">
+                            <textarea class="form-control" rows="5" type="text" name="name"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-md-6 col-md-offset-6">
+                            <input value="Enviar Mensagem" type="submit" class="form-control btn btn-success" />
+                        </div>
+                    </div>
+                </form>
+                <hr />
+                <p style="color:#5cb85c; font-size: 18px;"><img style="width: 30px;" src="{% static 'img/whatsapp-logo-1.png'%}">&nbsp;&nbsp;Fale conosco também pelo WhatsApp: (11) 94523-3176
+                </p>
+
+            </div><!-- /#First Column -->
+            
+           
+
+            
+        </div><!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.content-section-a -->
+
+<div class="content-section-b">
+
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-lg-12 ">
+                <h2>Nossos Serviços</h2>
+                <div class="text-center our-services">
+                    <div class="col-md-4">
+                        <img src="{% static 'img/dpvat-icon.png' %}" />
+                        <h3>DPVAT</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{% static 'img/trabalhista-icon.png' %}" />
+                        <h3>Trabalhista</h3>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="{% static 'img/inss-icon.png' %}" />
+                        <h3>INSS</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+</div>
+<!-- /.content-section-b -->
+
+{% endblock %}

@@ -1,0 +1,28 @@
+{% extends 'blog/index.html' %}
+{% load staticfiles %}
+{% block 'content' %}
+
+<div class="container top-bar-ret">
+	<div class="row">
+		{% if post.featured_image %}
+			<div class="col-lg-4">
+				<img src="{{post.featured_image.url}}" alt="" class="img-responsive" />
+			</div>
+			<div class="col-lg-8">
+		{% else %}
+			<div class="col-lg-12">
+		{% endif %}
+		
+			<div class="row">
+				<div class="col-lg-12">
+					<h1>{{ post.title }}</h1>
+				</div>
+				<div class="col-lg-12">
+					{{ post.content | safe }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

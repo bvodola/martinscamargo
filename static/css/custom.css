@@ -1,0 +1,48 @@
+.top-bar {
+	background: #666;
+	color: #fff;
+	padding: 6px 2px 9px 10px;
+	text-align: right;
+}
+
+.top-bar .phone {
+	font-size: 18px;
+	margin-right: -15px;
+	margin-top: 3px;
+}
+
+.top-bar .address i {
+	margin-right: -18px;
+}
+
+.top-bar .address .address-content {
+	line-height: 17px;
+}
+
+.bx-wrapper {
+	background: none !important;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+#slideDpvat {
+	background-image: url('../img/slider/motorbike-crash.jpg');
+}
+
+#slideTrabalhista {
+	background-image: url('../img/slider/law.jpg');
+}
+
+.our-services {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.our-services img {
+	border-radius: 200px;
+	box-shadow: 1px 1px 3px #333;
+}
+
+.top-bar-ret {
+	margin-top: 120px;
+}
